@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Contacto - Ferreterías Max</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="pack"> 
+                <h1><img src="imagenes/logo.png" class="imagenLogo"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="prducts.html">Productos</a> </li> 
+                        <li><a href="marcas.html">Marcas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li> 
+                    </ul>
+            
+                </nav>
+
+            </div>
+
+        </header>  
+        <main class="cont-ini">
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padre" required>
+
+                <label for="correoelectronico">Correo Electronico</label>
+                <input type="email" id="correoelectronico" class="input-padre" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padre" required placeholder="(xx)xxxx xxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padre"></textarea>
+
+                <fieldset>
+                    <legend class="test" id="test">Formas de contacto</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="teléfono" id="radio-teléfono">Teléfono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+
+                </fieldset>
+            
+                <fieldset>
+                    <legend>¿Cual es su horario de preferencia?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Quiere recicibir novedades</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar"> 
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8:00 a.m. - 5:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>8:00 a.m. - 5:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>8:00 a.m. - 5:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>8:00 a.m. - 5:00 p.m.</td>
+                    </tr>                    <tr>
+                        <td>Viernes</td>
+                        <td>8:00 a.m. - 5:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>8:00 a.m. - 12:30 p.m.</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        
+        </main>
+        <footer>
+            <img src="imagenes/logo.png" class="imagenLogo">
+            <p class="copy">&copy Copyright Ferreterías Max - 2023</p>
+        </footer>
+
+    </body>
+
+</html>        
